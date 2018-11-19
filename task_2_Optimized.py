@@ -49,9 +49,9 @@ plt.plot(DATA_FIELD.index, DATA_FIELD['ACC_RMS'])
 plt.title('ACC_RMS')
 plt.show()
 
-STEP1 = peak_counter(0, 70, 'ACC_RMS', 0)
-STEP2 = peak_counter(75, 200, 'ACC_RMS', 0)
-STEP3 = peak_counter(220, 275, 'ACC_RMS', 0)
+STEP1 = peak_counter(0, 70, 'ACC_RMS', 4)
+STEP2 = peak_counter(75, 200, 'ACC_RMS', 4)
+STEP3 = peak_counter(220, 275, 'ACC_RMS', 4)
 
 TOTAL_STEPS = STEP1+STEP2+STEP3
 print("Number of total STEPSs taken :::", TOTAL_STEPS)
